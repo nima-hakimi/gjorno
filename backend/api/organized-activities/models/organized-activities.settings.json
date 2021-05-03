@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organized_activities",
+  "info": {
+    "name": "Organized_activities",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Antall_deltakere": {
+      "type": "integer"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "organized_activities",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aktivitets",
+      "handler": "aktivitet.find"
+    },
+    {
+      "method": "GET",
+      "path": "/aktivitets/count",
+      "handler": "aktivitet.count"
+    },
+    {
+      "method": "GET",
+      "path": "/aktivitets/:id",
+      "handler": "aktivitet.findOne"
+    },
+    {
+      "method": "POST",
+      "path": "/aktivitets",
+      "handler": "aktivitet.create"
+    },
+    {
+      "method": "PUT",
+      "path": "/aktivitets/:id",
+      "handler": "aktivitet.update"
+    },
+    {
+      "method": "DELETE",
+      "path": "/aktivitets/:id",
+      "handler": "aktivitet.delete"
+    }
+  ]
+}

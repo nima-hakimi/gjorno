@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aktivitets",
+  "info": {
+    "name": "Activity_suggestion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "creator": {
+      "via": "my_activity_suggestions",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "saved_by": {
+      "via": "logged_activities",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+body {
+    background-image: url("https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_galleries/296628/2000x2000-0-70-045ce64ce7a1ee9ffe45c4acc68a54de.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fecc78;
+}
+.header {
+    text-align: right;
+    background: #fecc78;
+    color: white;
+    height: 150px;
+}
+.header a {
+    color:#0a2c55;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px; 
+    line-height: 25px;
+    margin: 50px;
+    position: relative; 
+    top: 60px;  
+    right: 0;
+}
+.header a:hover {
+    background-color: white;
+    color: black;
+}
+
+div.app{
+    display:flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 100px;
+    position: absolute; 
+    top: 25px;
+    left: 30px; 
+}
+
+.rectangle {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #fecc78;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 20px;
+    color: black;
+}
+.rectangleRegistration {
+    width: 400px;
+    height: 60vh;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    background-color: #fecc78;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 20px;
+    color: black;
+}
+
+div.rectangleRegistration form{
+    display: flex;
+    flex-direction: column;
+}
+
+div.rectangleRegistration input{
+    margin-bottom: 5px;
+}
+
+/*Rectangle for create activity page*/
+div.rectangle.create-activity{
+    width: 40vw;
+    height: 40vh;
+    margin: auto;  
+}
+
+div.rectangle > div{
+    margin-bottom: 10px;
+    max-width: 60vw;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+div.rectangle.start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+div.rectangle.choose-activity{
+    width: 40vw;
+    height: 20vh;
+    margin: auto;  
+}
+.login {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.rectangle button:hover, div.rectangleRegistration button:hover{
+    background-color: white;
+    color: black;
+}
+div.rectangle button, div.rectangleRegistration button{
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color:#4e627b;
+    transition: all 0.2s ease-in-out;
+}
+.rectangle form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.myprofile {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 720px;
+    min-width: 500px;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    text-align: left;
+    background-color:  #fecc78;
+    top: 200px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    color: #4e627b;
+    border-bottom: #4e627b;
+}
+.profileInfo{
+    padding-left: 130px;
+}
+
+.redirectButtonInMyProfile {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    border-radius: 0;
+    /* height: 35px; */
+    padding: 10px;
+}
+

@@ -1,0 +1,75 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+img{
+  width: 200px;
+}
+
+.activityBox {
+  font-weight: bold;
+  line-height: 34px;
+  height: relative;   /* Ubestemt høyde */
+  min-height: 120px;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 500px;   /* Fiksert bredde */
+  position: relative;
+}
+
+.element{
+  float: left;
+  padding-top: 5px;
+  margin-left: 5px;
+  max-width: 420px;
+}
+
+.date{
+  text-align: right;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+
+}
+
+.likes{
+  text-align: left;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.creator{
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  font-style: italic;
+  font-weight: 400;
+  display: inline;
+}
+
+
+
+.interfaceArrow{
+  /*border: 1px solid #999;*/
+  height: 40px;
+  width: 40px;
+  background-image: url(https://i.postimg.cc/D0nxJjh9/Arrow-Vector40x40.png);
+  background-position: center;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -20px;
+
+}
+
+
+button{
+  background-color: #FAEBE3;
+  border-radius: 10px;
+}
